@@ -1,0 +1,23 @@
+let nota1 = 5;
+let nota2 = 6;
+let notarec = 7;
+
+let  media = (nota1 + nota2) / 2;
+let situacao = "";
+
+if (media >= 7){
+    situacao = "aprovado";
+} else if (media < 4){
+    situacao = "reprovado";
+} else {
+
+} if (notarec >= 6){
+    situacao = "aprovado na recuperacao";
+} else {
+    situacao = reprovado na recuperacao";
+    {
+
+ }
+
+ console.log("media: " + media.tofixend(2));
+ console.log("situacao: " + situacao);
