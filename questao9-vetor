@@ -1,0 +1,7 @@
+let valores = [5, 12, 8, 20, 3]; // entrada
+
+// filtra valores maiores que 10
+let maiores = valores.filter(num => num > 10);
+
+// saída
+console.log("Valores maiores que 10: ", maiores);
