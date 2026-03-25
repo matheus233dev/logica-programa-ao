@@ -1,0 +1,24 @@
+let bairro = "Centro"; // entrada
+let valorPedido = 100; // entrada
+
+let frete;
+
+// regra do frete por bairro
+if (valorPedido >= 80) {
+    frete = 0;
+} else if (bairro === "Centro") {
+    frete = 5;
+} else if (bairro === "Brotas") {
+    frete = 8;
+} else if (bairro === "Itapuã") {
+    frete = 12;
+} else {
+    frete = 15;
+}
+
+// total a pagar
+let total = valorPedido + frete;
+
+// saída
+console.log("Frete: R$ " + frete);
+console.log("Total a pagar: R$ " + total);
