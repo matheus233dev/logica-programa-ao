@@ -1,0 +1,7 @@
+let numeros = [1, 2, 3, 4, 5, 6]; // entrada
+
+// filtra apenas números pares
+let pares = numeros.filter(num => num % 2 === 0);
+
+// saída
+console.log("Números pares: ", pares);
