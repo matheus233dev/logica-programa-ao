@@ -1,0 +1,8 @@
+let acoes = ["Login", "Visualizar", "Logout"]; // entrada
+
+// remove a última ação
+let removida = acoes.pop();
+
+// saída
+console.log("Ação removida: " + removida);
+console.log("Ações restantes: ", acoes);
