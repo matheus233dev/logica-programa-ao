@@ -1,0 +1,8 @@
+let cidades = ["sao paulo," "rio de janeiro", "curitiba"];
+//exiba somente o ultimo valor do vetor.
+console.log(cidades[2]);
+//troque o valor de "rio de janeiro por "salvado" por indice,
+// depois mostre todo o valor.
+cidades[1] = "salvador";
+
+console.log(cidades);
