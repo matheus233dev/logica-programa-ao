@@ -1,1 +1,16 @@
+let valorBoleto = 1000; // entrada
+let diasAtraso = 5; // entrada
 
+let valorFinal;
+
+// cálculo
+if (diasAtraso === 0) {
+    valorFinal = valorBoleto;
+} else {
+    let multa = valorBoleto * 0.02; // 2%
+    let juros = valorBoleto * 0.001 * diasAtraso; // 0,1% ao dia
+    valorFinal = valorBoleto + multa + juros;
+}
+
+// saída
+console.log("Valor final: R$ " + valorFinal.toFixed(2));
