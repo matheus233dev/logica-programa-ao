@@ -1,0 +1,20 @@
+let consumoKwh = 150; // entrada
+
+let precoPorKwh;
+let total;
+
+// definição da faixa
+if (consumoKwh <= 100) {
+    precoPorKwh = 0.60;
+} else if (consumoKwh <= 200) {
+    precoPorKwh = 0.75;
+} else {
+    precoPorKwh = 0.90;
+}
+
+// cálculo total
+total = consumoKwh * precoPorKwh;
+
+// saída
+console.log("Consumo: " + consumoKwh + " kWh");
+console.log("Valor da conta: R$ " + total.toFixed(2));
