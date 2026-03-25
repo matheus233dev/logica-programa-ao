@@ -1,0 +1,15 @@
+let senha = "abc12345"; // entrada
+
+let resultado;
+
+// validação
+if (senha.length < 8) {
+    resultado = "Senha inválida: deve ter no mínimo 8 caracteres";
+} else if (senha.includes("123")) {
+    resultado = "Senha inválida: não pode conter '123'";
+} else {
+    resultado = "Senha válida";
+}
+
+// saída
+console.log(resultado);
