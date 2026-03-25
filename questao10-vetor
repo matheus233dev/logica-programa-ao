@@ -1,0 +1,7 @@
+let nomes = ["Ana", "Bruno", "Carlos", "Eva"]; // entrada
+
+// filtra nomes com mais de 4 letras
+let nomesFiltrados = nomes.filter(nome => nome.length > 4);
+
+// saída
+console.log("Nomes com mais de 4 letras: ", nomesFiltrados);
