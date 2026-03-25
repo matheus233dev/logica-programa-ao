@@ -1,1 +1,18 @@
+let distanciaKm = 10; // entrada
+let orcamento = 20; // entrada
 
+let sugestao;
+
+// regras
+if (distanciaKm <= 2) {
+    sugestao = "A pé";
+} else if (distanciaKm <= 8 && orcamento >= 10) {
+    sugestao = "Ônibus";
+} else if (distanciaKm <= 15 && orcamento >= 25) {
+    sugestao = "Moto/Carro por app";
+} else {
+    sugestao = "Não é possível com esse orçamento";
+}
+
+// saída
+console.log("Sugestão: " + sugestao);
