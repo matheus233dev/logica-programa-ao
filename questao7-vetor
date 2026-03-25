@@ -1,0 +1,7 @@
+let fila = ["Maria", "João"]; // entrada
+
+// adiciona no início
+fila.unshift("Ana");
+
+// saída
+console.log("Fila final: ", fila);
