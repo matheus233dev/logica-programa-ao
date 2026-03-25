@@ -1,0 +1,14 @@
+// Lista inicial vazia
+let lista = [];
+
+// Adicionando itens (push)
+lista.push("Arroz");
+lista.push("Feijão");
+lista.push("Leite");
+
+// Removendo o primeiro item (shift)
+let removido = lista.shift();
+
+// Saída
+console.log("Item removido:", removido);
+console.log("Lista final:", lista);
