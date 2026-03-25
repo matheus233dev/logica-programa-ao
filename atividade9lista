@@ -1,1 +1,25 @@
+let saldo = 500; // entrada
+let valorCompra = 600; // entrada
+let temLimite = true; // entrada
+let limite = 200; // entrada
 
+let status;
+let saldoFinal;
+
+// regras
+if (saldo >= valorCompra) {
+    status = "Aprovado";
+    saldoFinal = saldo - valorCompra;
+} else if (temLimite && (saldo + limite) >= valorCompra) {
+    status = "Aprovado (usando limite)";
+    saldoFinal = saldo - valorCompra;
+} else {
+    status = "Negado";
+}
+
+// saída
+console.log("Status: " + status);
+
+if (status !== "Negado") {
+    console.log("Saldo final: R$ " + saldoFinal.toFixed(2));
+}
