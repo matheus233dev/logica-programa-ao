@@ -1,1 +1,26 @@
+let tipoCliente = "PJ"; // "PF" ou "PJ"
+let faturamento = 20000; // entrada
 
+let valorPlano;
+let categoria;
+
+// regras
+if (tipoCliente === "PF") {
+    valorPlano = 29.90;
+    categoria = "Pessoa Física";
+} else if (tipoCliente === "PJ") {
+    if (faturamento < 10000) {
+        valorPlano = 99;
+        categoria = "PJ Básico";
+    } else if (faturamento <= 50000) {
+        valorPlano = 199;
+        categoria = "PJ Intermediário";
+    } else {
+        valorPlano = 399;
+        categoria = "PJ Premium";
+    }
+}
+
+// saída
+console.log("Categoria: " + categoria);
+console.log("Valor do plano: R$ " + valorPlano.toFixed(2));
