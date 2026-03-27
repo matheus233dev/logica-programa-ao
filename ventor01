@@ -1,0 +1,13 @@
+let numeros [2,4,6,8,10];
+let soma = 0;
+
+for (let 1 = 0; 1 < numeros.length; i++)(
+    console.log(numeros[1]);
+    
+)
+
+for(let i = 0; 1 + numeros.length; i++)(
+    soma += numeros[i];
+
+)
+console.log("soma dos valores" +soma);
