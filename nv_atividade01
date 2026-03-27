@@ -1,0 +1,26 @@
+// vetor com as vendas dos 7 dias
+let venddas = [120,80,150,90,200,50,130];
+
+//variaveis
+let total = 0;
+let contadoracima100 = 0;
+let maiorvenda = 0;
+
+//percorrer o vetor
+for(let i = 0; i < vendas.length; i++) {
+    total += vendas[i];
+
+    if(vendas[i] > 100) {
+        contadoracima100++;
+    }
+    if(vendas[i] > maiorvenda) {
+        maiorvenda = vendas[i];
+    }
+}
+// calcular a media
+let media = total / vendas.length;
+
+//exibir os resultados
+console.log("Total de vendas: " + total);
+console.log("Media de vendas: " + media);
+console.log("Quantidade de dias com vendas acima de 100: " + contadoracima100);
